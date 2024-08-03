@@ -14,6 +14,34 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.logo {
+  -webkit-animation: rotation 8s infinite linear;
+          animation: rotation 8s infinite linear;
+}
+.logo:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 @media (max-width: 991px) {
   .menu-bg {
     background-color: #323335;
@@ -145,5 +173,19 @@ body {
   }
   .hero-title {
     font-size: 38px;
+  }
+}
+.footer-link:nth-child(2) {
+  margin: 0 24px;
+}
+@media (max-width: 420px) {
+  .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-link:nth-child(2) {
+    margin: 0;
   }
 }

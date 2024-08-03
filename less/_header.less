@@ -5,6 +5,22 @@
     width: 416px;
     justify-content: center;
 }
+.logo{
+    animation: rotation 8s infinite linear;
+    
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
 @media(max-width: 991px) {
     .menu-bg {
         background-color: #323335;
