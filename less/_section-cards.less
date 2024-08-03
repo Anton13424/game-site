@@ -1,3 +1,18 @@
+.gta-img{
+    flex: 1.5;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 56px;
+    margin-right: 8px;
+    background-color: #8b72ff;
+    transition: 0.2 ease-in;
+    &hover{
+        background-color: #8b72ff;
+    }
+}
+
 .fortnite-img{
     flex: 1;
     height: 330px;
@@ -9,10 +24,12 @@
     background-color: #fdf386;
     transition: 0.2s ease-in;
     overflow-y: clip;
+
+    &hover{
+        background-color: #71e66e;
+    }
 }
-&hover{
-    background-color: #71e66e;
-}
+
 .dota-img{
     width: 100%;
     height: 330px;
@@ -23,5 +40,30 @@
     background-color: #69adfd;
     transition: 0.2s ease-in;
     overflow-y: clip;
+
+    &img {
+        object-fit: contain;
+        width: 100%;
+        object-position: center;
+        height: 100%;
+    }
+    &hover{
+        background-color: #fcb8ff;
+    }
 }
-.dota
+
+@media (max-width: 420px) {
+    .first-card-row {
+        flex-direction: column;
+    }
+    .gta-img{
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+    .fortnite-img{
+        margin: 0;
+    }
+    .hero-title{
+        font-size: 38px;
+    }
+}
