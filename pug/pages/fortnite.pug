@@ -1,0 +1,50 @@
+extends ../layouts/pages-layout
+
+block title 
+    - var title = 'Fortnite'
+
+block content
+    header 
+        .fortnite-box
+            .container-xl.p-0
+                .container
+                    .row
+                        .col-xxl-6.col-xl-6.col-lg-6.col-md-12
+                            .hero-section.pt-5
+                                h1.hero-title.text-white.m-0 Fortnite
+                                p.hero-desc.text-white.my-5
+                                    | Создавайте, играйте и сражайтесь с друзьями бесплатно в Fortnite. Станьте последним выжившим в «Королевской битве» или «Нулевой высоте», посещайте концерты и мероприятия или играйте в миллионы авторских игр, среди которых вы найдёте гонки, полосы для паркура, игры на выживание с зомби и не только. Каждый остров в Fortnite имеет собственный возрастной рейтинг, поэтому вы всегда сможете легко найти то, что подойдёт вам и вашим друзьям
+                                p.hero-desc.text-white
+                                    | Всё это ждёт вас в Fortnite… Присоединяйтесь!
+                                    
+
+            .img-mobile
+                img(src='./img/pic/fortnite-big.png')
+    main
+        section.gallery.pt-5
+            .container-xl.p-0
+                .container
+                    h1.gallery-title Галлерея
+
+                    .swiper.mySwiper
+                        .swiper-wrapper
+                            .swiper-slide
+                                img(src='./img/pic/slider/fortnite-slide-1.png')
+                            .swiper-slide
+                                img(src='./img/pic/slider/fortnite-slide-2.png')
+                        .swiper-button-next
+                        .swiper-button-prev
+
+        section.articles.py-5
+            .container-xl.p-0
+                .container
+                    h1.gallery-title Статьи
+                    .row
+                        //- карточчка новости
+                        .col-md-4
+                            .card
+                                .card-body
+                                    img.card-img-top.mb-4(src='./img/pic/articles/fortnite-article-1.png')
+                                    h5.card-title Заголовок новости
+                                    p.card-text Описание новости
+                                    a.btn.btn-primary(href='#') Читать

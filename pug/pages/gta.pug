@@ -1,0 +1,50 @@
+extends ../layouts/pages-layout
+
+block title 
+    - var title = 'GTA'
+
+block content
+    header 
+        .fortnite-box
+            .container-xl.p-0
+                .container
+                    .row
+                        .col-xxl-6.col-xl-6.col-lg-6.col-md-12
+                            .hero-section.pt-5
+                                h1.hero-title.text-white.m-0 GTA
+                                p.hero-desc.text-white.my-5
+                                    | GTA описание
+                                p.hero-desc.text-white
+                                    | GTA описание
+                                    
+
+            .img-mobile
+                img(src='./img/pic/fortnite-big.png')
+    main
+        section.gallery.pt-5
+            .container-xl.p-0
+                .container
+                    h1.gallery-title Галлерея
+
+                    .swiper.mySwiper
+                        .swiper-wrapper
+                            .swiper-slide
+                                img(src='./img/pic/slider/gta-slide-1.png')
+                            .swiper-slide
+                                img(src='./img/pic/slider/gta-slide-2.png')
+                        .swiper-button-next
+                        .swiper-button-prev
+
+        section.articles.py-5
+            .container-xl.p-0
+                .container
+                    h1.gallery-title Статьи
+                    .row
+                        //- карточчка новости
+                        .col-md-4
+                            .card
+                                .card-body
+                                    img.card-img-top.mb-4(src='./img/pic/articles/gta-article-1.png')
+                                    h5.card-title Заголовок новости
+                                    p.card-text Описание новости
+                                    a.btn.btn-primary(href='#') Читать
